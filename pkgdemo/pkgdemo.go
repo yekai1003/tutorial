@@ -1,7 +1,14 @@
+/*
+   author:Yekai
+   company:Pdj
+   filename:pkgdemo.go
+*/
 package pkgdemo
 
 import (
 	"fmt"
+
+	_ "github.com/yekai1003/tutorial/mathdemo"
 )
 
 //外部可导出结构体
@@ -19,7 +26,7 @@ type internalPerson struct {
 }
 
 func init() {
-	fmt.Println("pkgdemo init is called")
+	fmt.Println("pkgdemo'init is called")
 }
 
 //外部可导出函数
